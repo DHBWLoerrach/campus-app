@@ -27,62 +27,56 @@ package de.dhbw.organizer.calendar;
 import android.graphics.Color;
 
 public class Constants {
-	
+
 	/**
-	 * Authority type  
+	 * Authority type
 	 */
 	public static final String ACCOUNT_CALENDAR_AUTHORITY = "com.android.calendar";
 	/**
-     * Account type string.
-     */
-    public static final String ACCOUNT_TYPE = "de.dhbw.organizer.icalsync";
+	 * Account type string.
+	 */
+	public static final String ACCOUNT_TYPE = "de.dhbw.organizer.icalsync";
 
-    /**
-     * Authtoken type string.
-     */
-    public static final String AUTHTOKEN_TYPE = "de.dhbw.organizer.icalsync";
-    
-    /**
-     * token to retrieve Calendar URL from AccountManager
-     */
-    public static final String KEY_ACCOUNT_CAL_URL = "de.dhbw.organizer.callendar.url";
-    
-    public static final String KEY_ACCOUNT_CAL_UUID = "de.dhbw.organizer.callendar.uuid";
-    
-      
-    /**
-     * this String is added in front of every Calendar 
-     */
-    public static final String CALENDAR_DISPLAY_NAME_PREFIX = "DHBW ";
-    
-    
-    /**
-     * default colors, if all are already used, the first is taken
-     */
-    public static final int[] CALENDAR_COLORS = new int[] {	Color.parseColor("#e2001a"), //DHBW RED    						
-    														Color.parseColor("#b83347"), //between DHBW RED and DHBW dark red  														
-    														Color.parseColor("#8b0011"), //DHBW dark red 
-    														Color.parseColor("#ff5858"), //brighter than DHBW red
-    														Color.parseColor("#ff9999"), //brighter than DHBW red, more like rosa
-    														}; 
-    /**
-     * min time interval between two syncs in millis 
-     */
+	/**
+	 * Authtoken type string.
+	 */
+	public static final String AUTHTOKEN_TYPE = "de.dhbw.organizer.icalsync";
+
+	/**
+	 * token to retrieve Calendar URL from AccountManager
+	 */
+	public static final String KEY_ACCOUNT_CAL_URL = "de.dhbw.organizer.callendar.url";
+
+	public static final String KEY_ACCOUNT_CAL_UUID = "de.dhbw.organizer.callendar.uuid";
+
+	/**
+	 * this String is added in front of every Calendar
+	 */
+	public static final String CALENDAR_DISPLAY_NAME_PREFIX = "DHBW ";
+
+	/**
+	 * default colors, if all are already used, the first is taken
+	 */
+	public static final int[] CALENDAR_COLORS = new int[] {
+			Color.parseColor("#e2001a"), // DHBW RED
+			Color.parseColor("#b83347"), // between DHBW RED and DHBW dark red
+			Color.parseColor("#8b0011"), // DHBW dark red
+			Color.parseColor("#ff5858"), // brighter than DHBW red
+			Color.parseColor("#ff9999"), // brighter than DHBW red, more like pink
+	};
+	/**
+	 * min time interval between two syncs in millis
+	 */
 	public static final long MIN_SYNC_INTERVRALL_IN_MILLIS = 10 * 1000;
 
 	/**
 	 * sync interval in seconds e.g. 60 * 60 * 12 for 12h
 	 */
 	public static final long SYNC_INTERVALL_IN_SEC = 60 * 60 * 12;
-	
+
 	/**
 	 * URL where the XML is to obtain the up to date calendar list
 	 */
-	//public static final String EXTERNAL_CALENDAR_LIST_URL = "http://hemera.bf-it.eu/dh/calendar_calendars.xml";
 	public static final String EXTERNAL_CALENDAR_LIST_URL = "http://www.dhbw-loerrach.de/fileadmin/pubdocs/cal-app/calendar_calendars.xml";
-	
-	
-	
 
-	
 }

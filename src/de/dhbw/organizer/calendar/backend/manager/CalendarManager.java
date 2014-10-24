@@ -24,7 +24,7 @@
  */
 package de.dhbw.organizer.calendar.backend.manager;
 
-//import java.awt.Color;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -37,8 +37,6 @@ import java.util.TimeZone;
 
 import org.xmlpull.v1.XmlPullParserException;
 
-import com.google.ical.values.RRule;
-
 import android.accounts.Account;
 import android.accounts.AccountManager;
 import android.content.ContentResolver;
@@ -47,7 +45,6 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.database.Cursor;
-import android.graphics.Color;
 import android.net.Uri;
 import android.provider.CalendarContract;
 import android.provider.CalendarContract.Calendars;
@@ -403,7 +400,6 @@ public class CalendarManager {
 	public boolean deleteCalendar(Account account, long calendarId) {
 
 		deleteAllEvents(account, calendarId);
-		Uri url = asSyncAdapter(Calendars.CONTENT_URI, account.name, account.type);
 
 		ContentResolver cr = mContext.getContentResolver();
 		String selection = "((" + Calendars._ID + " = ?) AND  (" + Calendars.ACCOUNT_TYPE + " = ?))";
