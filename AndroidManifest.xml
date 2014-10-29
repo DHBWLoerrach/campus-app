@@ -30,8 +30,8 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="de.dhbw.organizer"
-    android:versionCode="100"
-    android:versionName="V1.0.0_20131218" >
+    android:versionCode="101"
+    android:versionName="V1.0.1_20141029" >
 
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
@@ -129,14 +129,5 @@
             android:label="@string/app_start_buildings" > 
         </activity>
         <activity android:name="de.dhbw.organizer.calendar.frontend.preferences.Preferences"></activity>
-    </application>
-
-    
-    
-    
-    
-    
-    
-    
-    
+    </application>    
 </manifest>
